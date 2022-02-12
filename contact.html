@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking the CSS Stylesheets-->
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="helpers/css/loading.css">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="helpers/css/cursor.css">
+    <link rel="stylesheet" href="static/css/contact.css">
+    <!--Linking Javascript code-->
+    <script src="helpers/javascript/mouse-animation.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div id="hideAfterFewSeconds" class="preloader"><svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg></div>
+</head>
+<body>
+<div class="cursor"></div>
+<section class="showcase">
+  <header class="logo">
+      <h1 href="aboutme.html"class="logo">Contact Form</h1>
+      <script src="helpers/javascript/jquery.js"></script> 
+      <script src="helpers/javascript/navbar-loader.js"></script> 
+      <div id="navbarContent"></div>
+</div>
+  </header>
+  <!--Setting the video up and adding the text-->
+  <video src="img/home/notusedvideo.mp4" muted loop autoplay></video>
+  <div class="overlay">
+    <br><br>
+      <div class="text">
+        <div class="container">
+          <script type="text/javascript">var submitted=false;</script>
+          <form id="gform" name="gform" enctype="text/plain" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLScPdsAf4xThh6j7_OPOYMwTTesSiqeT4aUlsofWuQTZZ9C53g/formResponse?">
+            <label for="name">Full Name</label>
+            <input type="text" id="entry.2005620554" name="entry.2005620554" placeholder="Your Full Name...">
+        
+            <label for="email">Email</label>
+            <input type="text" id="entry.1045781291" name="entry.1045781291" placeholder="Your Email...">
+        
+            <label for="continent">Continent</label>
+            <input type="text" id="entry.419079345" name="entry.419079345" placeholder="Your Continent...">
+        
+            <label for="subject">Subject</label>
+            <textarea id="entry.1065046570" name="entry.1065046570" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+
+          </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+          <script type="text/javascript">
+            //This is a function that validates an email
+            function validateEmail(email){
+              var re = /\S+@\S+\.\S+/;
+              return re.test(email);
+            }
+            //This is a function that submits the form
+          $('#gform').on('submit', function(e) {
+            if(validateEmail(document.getElementById('entry.1045781291').value) == false){
+              //If the email is not valid, then we display an error message
+              alert("Please enter a valid email address");
+            }else if(document.getElementById('entry.2005620554').value && document.getElementById('entry.1045781291').value && document.getElementById('entry.419079345').value && document.getElementById('entry.1065046570').value){
+            //If it satisfies the requirements then it is submitted
+            $('#gform *').fadeOut();
+            $('#gform').prepend('Your submission has been processed...').css('color', 'black').css('text-align','center');
+            }else{
+            //This function denies to submit the form if any of the fields are empty
+            alert("Please fill in all the fields!"); 
+          };});
+          </script>
+        </div>
+      </div>
+  </section>
+    <!--Javascript for pre-loader animation-->
+    <script src="helpers/javascript/preloader.js"></script>
+</body>
+</html>

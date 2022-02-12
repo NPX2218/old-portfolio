@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Setting the Title and linking sheets-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking CSS Stylesheets-->
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="helpers/css/loading.css">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="helpers/css/cursor.css">
+    <link rel="stylesheet" href="static/css/aboutme.css">
+    <title>NEEL BANSAL</title>
+    <!--Setting the preloader-->
+    <div id="hideAfterFewSeconds" class="preloader"><svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg></div>
+</head>
+<body>
+  <!--Displaying this in the showcase bar-->
+    <section class="showcase">
+        <header class="logo">
+            <h2 href="aboutme.html"class="logo">About Me</h2>
+            <script src="helpers/javascript/jquery.js"></script> 
+            <script src="helpers/javascript/navbar-loader.js"></script> 
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <div id="navbarContent"></div>
+        </header>
+        <!--Setting the video up and adding the text-->
+        <video src="img/aboutme/aboutme.mp4" muted loop autoplay></video>
+        <div class="overlay">
+            <div class="text">
+                <h2>NEEL BANSAL</h2>
+                <br><br>
+                <div class="aboutme-box">
+                    <h1>Hobbies</h1>
+                    <div class="icons-box">
+                        <img src="img/icons/designer.svg" alt="designer-svg">
+                    </div>                    
+                    <p>I enjoy many things, such as coding, 
+                        listening to music, helping others out,
+                        sports, studying, playing
+                        video games and more!</p>
+                </div>
+                <div class="aboutme-box" style="right: 8%;">
+                    <h1>Status</h1>
+                    <div class="icons-box" style="width: 35px; height: 40px;">
+                        <img src="img/icons/mentor.svg" alt="mentor-svg">
+                    </div>
+                    <p>Current unemployed, studying in  
+                      school. I haven't been in any 
+                      job positions.</p>
+                </div>
+                <div class="aboutme-box" style="bottom: -315%;">
+                    <h1>Languages</h1>
+                    <div class="icons-box">
+                        <img src="img/icons/frontend.svg" alt="frontend-svg">
+                    </div>
+                    <p>I am mainly fluent in Python, 
+                        but I am aiming to learn HTML, 
+                        CSS, and Javascript!</p>
+                </div>                
+                <div class="aboutme-box" style="bottom: -315%; right: 8%;">
+                  <h1>Goals</h1>
+                  <div class="icons-box">
+                      <img src="img/icons/goals.svg" alt="frontend-svg">
+                  </div>
+                  <p>N/A</p>
+              </div>                
+          </div>
+    </section>
+        <!--Javascript for pre-loader animation-->
+        <script src="helpers/javascript/preloader.js"></script>
+        <!--Javascript for Custom Cursor-->
+        <div class="cursor"></div>
+        <script src="helpers/javascript/mouse-animation.js"></script>
+    </body>
+</html>

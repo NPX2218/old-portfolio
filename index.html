@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Setting the Title and linking sheets-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking CSS Stylesheets-->
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="helpers/css/loading.css">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="helpers/css/cursor.css">
+    <!--Linking Javascript-->
+    <script src="helpers/javascript/mouse-animation.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Setting the preloader-->
+    <div id="hideAfterFewSeconds" class="preloader"><svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg></div>
+</head>
+<body>
+  <title>NEEL BANSAL</title>
+  <!--Div for Custom Cursor-->
+  <div class="cursor"></div>
+  <!--Displaying this in the showcase bar-->
+    <section class="showcase">
+        <header class="logo">
+            <h2 href="aboutme.html"class="logo">Welcome</h2>
+            <!--Linking JQuery and Creating the Navbar-->
+            <script src="helpers/javascript/jquery.js"></script> 
+            <script src="helpers/javascript/navbar-loader.js"></script> 
+            <div id="navbarContent"></div>
+        </header>
+        <!--Setting the video up and adding the text-->
+        <video src="img/home/home_video.mp4" muted loop autoplay></video>
+        <div class="overlay">
+            <div class="text">
+                <h2>NEEL BANSAL</h2>
+                <h3>Exploring the world</h3>
+                <p>FRONT-END DEVELOPER AND GUI DESIGNER</p>
+                <a href="aboutme.html">Explore</a>
+            </div>
+        <!--Social media buttons & Links-->
+        <ul class="social">
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100074526084996"><img src ="img/social/facebook.png"></a></li>
+            <li><a target="_blank" href="https://www.twitter.com/"><img src ="img/social/twitter.png"></a></li>
+            <li><a target="_black" href="https://www.instagram.com/_neel_bansal_/"><img src ="img/social/instagram.png"></a></li>
+            <li><a target="_black" href="https://github.com/NPX2218"><img src ="img/social/github.png"></a></li>
+        </ul>
+        <div class="copyright">
+            <div class="popup" onclick="myFunction()">
+                <a><img src ="img/copyright.png">
+                <span class="popuptext" id="myPopup">Copyright Neel Bansal © 2021-2022</span></a></div>
+        </div>
+        <link rel="stylesheet" href="helpers/css/popup.css">
+          <script src="helpers/javascript/copyright.js"></script>
+      </section>
+        <!--Javascript for pre-loader animation-->
+        <script src="helpers/preloader.js"></script>
+
+    </body>
+</html>
